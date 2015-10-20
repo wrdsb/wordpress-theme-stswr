@@ -34,7 +34,7 @@
 }
 
 #loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
- background-color: #ccc !important; 
+ background-color: #fff8eb !important; 
 	border-top: 3px solid #ffa700;
 	width:100%;
 }

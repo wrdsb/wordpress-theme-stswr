@@ -34,13 +34,16 @@
 }
 
 #loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
- background-color: #333 !important; 
+ background-color: #ccc !important; 
 	border-top: 3px solid #ffa700;
 	width:100%;
 }
 
 #loginbar p.copyright {
 	color: #333;
+	font-family: 'Open Sans', sans-serif !important;
+    	-webkit-font-smoothing: antialiased;
+    	font-weight: 400;
 }
 
 #loginbar a {

@@ -5,7 +5,7 @@
  Author:       Suzanne Carter 
  Author URI:   http://www.wrdsb.ca/
  Template:     wordpress-theme-master
- Version:      1.0.0
+ Version:      0.0.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         three-columns, responsive-layout, accessibility-ready
@@ -231,20 +231,39 @@ p.readmore {
     font-size: 14px !important;
 }
 
-.editpost a {
-    font-size: 12px;
-    padding: 5px;
-    -webkit-border-radius: 15px 0 15px 0;
-    -moz-border-radius: 15px 0 15px 0;
-    border-radius: 15px 0 15px 0;
-    border:1px solid #FFA700;
+.editpost {
+    padding: 0 5px;
+    width: 50px;
+    border: 1px solid #FFA700;
     background-color: #fff8eb;
-    -webkit-box-shadow: #B3B3B3 4px 4px 4px;
-    -moz-box-shadow: #B3B3B3 4px 4px 4px; 
-    box-shadow: #B3B3B3 4px 4px 4px;
     text-transform: uppercase;
-    font-weight: 700;
+    text-align: center;
+    /* rounded corners */
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    /* shadow */
+    -webkit-box-shadow: #eee 4px 4px 4px;
+    -moz-box-shadow: #eee 4px 4px 4px; 
+    box-shadow: #eee 4px 4px 4px;
+}
 
+.editpost:hover {
+    border: 1px solid #ffff8eb;
+    background-color: #ffa700;
+    /* shadow */
+    -webkit-box-shadow: #eee -4px -4px 4px;
+    -moz-box-shadow: #eee -4px -4px 4px; 
+    box-shadow: #eee -4px -4px 4px;
+}
+
+.editpost a {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.editpost a:hover {
+    background-color: #ffa700;
 }
 
 /** TABLE COLOURS **/

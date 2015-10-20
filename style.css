@@ -4,10 +4,281 @@
  Description:  Child theme for STSWR, based on the WRDSB responsive theme.
  Author:       Suzanne Carter 
  Author URI:   http://www.wrdsb.ca/
- Template:     wrdsb
+ Template:     wordpress-theme-master
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         three-columns, responsive-layout, accessibility-ready
  Text Domain:  wrdsb-stswr
 */
+
+:target {
+	padding-top: 50px !important;
+	-webkit-animation: target-fade 3s 1;
+	-moz-animation: target-fade 3s 1;
+}
+
+@-webkit-keyframes target-fade {
+	0% { background-color: rgba(0,0,0,.1); }
+	100% { background-color: rgba(0,0,0,0); }
+}
+@-moz-keyframes target-fade {
+	0% { background-color: rgba(0,0,0,.1); }
+	100% { background-color: rgba(0,0,0,0); }
+}
+
+#contact:target {
+	padding-top: 0 !important;
+	-webkit-animation: target-fade 0s 0;
+	-moz-animation: target-fade 0s 0;
+}
+
+#loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
+ background-color: #333 !important; 
+	border-top: 3px solid #ffa700;
+	width:100%;
+}
+
+#loginbar p.copyright {
+	color: #333;
+}
+
+#loginbar a {
+	color: #333;
+	font-weight: bold;
+}
+
+
+.button, .button_login {
+    font-family: 'Open Sans', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+  line-height: 18px; 
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  padding: 10px;
+  height: 55px;
+  border: 1px solid #ECE9D8;
+}
+
+.button a, .button_login a {
+  font-size: 18px; 
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button img, .button_login img {
+  float: left; 
+  padding-right: 5px;
+}
+
+.button:hover {
+  border: 1px solid #8b7a5f;
+  background-color: #ffc;
+}
+
+.button_login:hover {
+  border: 1px solid #4c7686;
+  background-color: #bfe8f9;
+}
+
+.button a:hover, .button_login a:hover, .sub-menu-heading a {
+  background-color: transparent !important;
+}
+
+.sub-menu-heading a:hover,  .sub-menu-heading a:focus {
+  color: #fff;
+}
+
+.my-navbar {
+    background-color: #333;
+    border-radius: 0px;
+    border-top: 6px solid #ffa700;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+.my-navbar, .my-navbar a {
+    font-family: 'Open Sans', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+.nav >li.active, .nav >li.current-page-ancestor, .nav >li.current_page_ancestor, .nav >li.current-menu-item, .nav >li.current_page_item {
+    background-color: #e69600;
+}
+
+.nav >li > a:hover, .nav >li > a:focus {
+    background-color: #cc8600;
+}
+
+a {
+    color: #b37500;
+}
+
+a:hover, a:focus {
+    color: #333;
+    text-decoration: underline;
+    background-color: #ffa700;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding-bottom: 20px;
+    padding-top: 12px;
+    margin-top: 10px;
+    border-top: 6px solid #ffa700;
+}
+
+.footer a {
+    color: #ffdd9d;
+}
+
+.footer a:hover, .footer a:focus {
+    color: #000;
+    text-decoration: underline;
+    background-color: #ccc;
+}
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+p.copyright, h6.copyright {
+    color: #e69600;
+}
+
+.sub-menu-heading {
+    background-color: #666;
+}
+
+.sub-menu-items {
+    background-color: #fff8eb;
+}
+
+
+.sub-menu-items a:hover, .sub-menu-items a:focus {
+    color: #333;
+    text-decoration: underline;
+    background-color: #fff8eb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+body, .sub-menu-items li a, .widget-area li a {
+    font-family: 'Open Sans', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+ .sub-menu-items li a, .widget-area li a {
+    font-size: 15px;
+}
+
+.sub-menu-items li {
+    border-bottom: 1px dashed #ffa700;
+}
+
+.sub-menu-items li:last-child {
+    border-bottom: 0;
+}
+
+p, li {
+    font-family: 'Vollkorn', serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+p.intro {
+    font-family: 'Open Sans', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.footer p, p.readmore, p.categories, p.postdate, .next, .page-numbers, .prev, .editpost, .footer li {
+    font-family: 'Open Sans', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+.next, .page-numbers, .prev {
+    font-size: 13px;
+} 
+
+.footer li {
+    font-size: 13px;
+}
+
+p.readmore {
+    font-size: 14px !important;
+}
+
+.editpost a {
+    font-size: 12px;
+    padding: 5px;
+    -webkit-border-radius: 15px 0 15px 0;
+    -moz-border-radius: 15px 0 15px 0;
+    border-radius: 15px 0 15px 0;
+    border:1px solid #FFA700;
+    background-color: #fff8eb;
+    -webkit-box-shadow: #B3B3B3 4px 4px 4px;
+    -moz-box-shadow: #B3B3B3 4px 4px 4px; 
+    box-shadow: #B3B3B3 4px 4px 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+/** TABLE COLOURS **/
+
+thead th {
+   background-color: #eee;
+   border-bottom: 2px solid #ffa700 !important;
+}
+
+tr:hover {
+    background-color: #fff8eb !important;
+}
+
+td:hover {
+    background-color: #ffdd9d !important;
+}
+
+/** LOGO **/
+
+#logo a {
+    display: inline-block;
+    width: 100%;
+    height: 110px;
+    background: url(http://stswrdev.wpengine.com/wp-content/uploads/stswr_icon.gif) no-repeat;
+    background-size: 110px 110px;
+    padding-left: 120px;
+    text-decoration: none;
+    color: #000;
+}
+
+#logo a h2 {
+    color: #333;
+    font-size: 20px;
+}
+
+#logo a h3 {
+    color: #333;
+    font-size: 18px;
+    margin-top: -10px;
+}

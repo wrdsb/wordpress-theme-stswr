@@ -305,6 +305,10 @@ td:hover {
     margin-top: -10px;
 }
 
+.pf-content .printfriendly a:hover {
+    background-color: #fff;
+}
+
 /*** ALERTS ***/
 
 .alerts {

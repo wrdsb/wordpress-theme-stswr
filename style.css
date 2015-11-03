@@ -168,11 +168,15 @@ p.copyright, h6.copyright {
     background-color: #fff8eb;
 }
 
-
 .sub-menu-items a:hover, .sub-menu-items a:focus {
     color: #333;
     text-decoration: underline;
     background-color: #fff8eb;
+}
+
+/* children in sub-nav */
+.nav_current_page_children_container {
+	background-color: #fffdf9; /*primary-faint*/
 }
 
 h1, h2, h3, h4, h5, h6 {

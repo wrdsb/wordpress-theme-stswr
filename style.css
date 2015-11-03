@@ -309,6 +309,7 @@ td:hover {
 
 .navbar-header {
 	background:url(stswr_icon.gif) no-repeat;
+	background-size: 50px 55px;
 	position:relative;
 }
 .pf-content .printfriendly a:hover {

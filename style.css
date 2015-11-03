@@ -5,7 +5,7 @@
  Author:       Suzanne Carter
  Author URI:   http://www.wrdsb.ca/
  Template:     wordpress-theme
- Version:      0.0.2
+ Version:      0.0.3
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         three-columns, responsive-layout, accessibility-ready
@@ -168,11 +168,15 @@ p.copyright, h6.copyright {
     background-color: #fff8eb;
 }
 
-
 .sub-menu-items a:hover, .sub-menu-items a:focus {
     color: #333;
     text-decoration: underline;
     background-color: #fff8eb;
+}
+
+/* children in sub-nav */
+.nav_current_page_children_container {
+	background-color: #fffdf9; /*primary-faint*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -309,8 +313,15 @@ td:hover {
 
 .navbar-header {
 	background:url(stswr_icon.gif) no-repeat;
+	background-size: 50px 55px;
 	position:relative;
 }
+
+.navbar-header a:hover {
+	background-color: transparent;
+	color: #fff;
+}
+
 .pf-content .printfriendly a:hover {
     background-color: #fff;
 }

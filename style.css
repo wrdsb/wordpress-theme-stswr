@@ -314,7 +314,7 @@ td:hover {
 }
 
 .navbar-header a:hover {
-	background-color: none;
+	background-color: transparent;
 }
 
 .pf-content .printfriendly a:hover {

@@ -30,3 +30,32 @@ function google_fonts() {
     echo '<link href="http://fonts.googleapis.com/css?family=Vollkorn:400,700|Open+Sans:400italic,400,600" rel="stylesheet" type="text/css" />' . "\n";
 }
 add_action( 'wp_head', 'google_fonts' );
+
+// standardizing log in logo
+function my_login_logo() { ?>
+    <style type="text/css">
+        .login h1 a {
+            background-image: url(http://stswrdev.wpengine.com/wp-content/themes/wordpress-theme-stswr/stswr_icon.gif);
+            padding-bottom: 30px;
+            background-size: 150px 150px;
+            height: 150px;
+            width: 150px;
+            background-repeat: no-repeat;
+        }
+    	.message {
+		    background-color: #f9fbff;
+    	}
+	    #login_error {
+	    	background-color: #fffefe;
+	    }
+	    .login {
+	    	background-color: #fff;
+	    }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+// setting the url
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );

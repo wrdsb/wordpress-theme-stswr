@@ -30,3 +30,48 @@ function google_fonts() {
     echo '<link href="http://fonts.googleapis.com/css?family=Vollkorn:400,700|Open+Sans:400italic,400,600" rel="stylesheet" type="text/css" />' . "\n";
 }
 add_action( 'wp_head', 'google_fonts' );
+
+// standardizing log in logo
+function my_login_logo() { ?>
+    <style type="text/css">
+        .login h1 a {
+            background-image: url(http://stswrdev.wpengine.com/wp-content/themes/wordpress-theme-stswr/stswr_icon.gif);
+            padding-bottom: 30px;
+            background-size: 150px 150px;
+            height: 150px;
+            width: 150px;
+            background-repeat: no-repeat;
+        }
+    	.message {
+		    background-color: #f9fbff;
+    	}
+	    #login_error {
+	    	background-color: #fffefe;
+	    }
+	    .login {
+	    	background-color: #fff;
+	    }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+// setting the url
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+// Change the Lost Password Text from the WordPress Login
+function change_lostpassword_text ( $lostpassword_newtext ) {  
+     $lostpassword_words = "Lost your password?";
+     if ($lostpassword_newtext == $lostpassword_words){$lostpassword_newtext = 'Forgot your password? Change it with MyPassword!';}
+        return $lostpassword_newtext;
+     }
+add_filter( 'gettext', 'change_lostpassword_text' );  
+
+/* Redirect the lost password link to My Password */
+add_filter( 'lostpassword_url', 'my_lost_password_page', 10, 2 );
+function my_lost_password_page( $lostpassword_url, $redirect ) {
+    //return home_url( 'https://mypassword.wrdsb.ca/?redirect_to=' . $redirect );
+    $lostpassword_url = 'https://mypassword.wrdsb.ca/';
+    return $lostpassword_url;
+}

@@ -1,3 +1,6 @@
+## 0.0.4
++ log in screen logo and text customization
+
 ## 0.0.3
 + styling for mobile logo fine-tuned
 + added CHANGES.md file

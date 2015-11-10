@@ -1,3 +1,6 @@
+## 0.0.5
++ fixed function conflict
+
 ## 0.0.4
 + log in screen logo and text customization
 

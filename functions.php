@@ -32,7 +32,7 @@ function google_fonts() {
 add_action( 'wp_head', 'google_fonts' );
 
 // standardizing log in logo
-function my_login_logo() { ?>
+function stswr_login_logo() { ?>
     <style type="text/css">
         .login h1 a {
             background-image: url(http://stswrdev.wpengine.com/wp-content/themes/wordpress-theme-stswr/stswr_icon.gif);
@@ -53,9 +53,9 @@ function my_login_logo() { ?>
 	    }
     </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_action( 'login_enqueue_scripts', 'stswr_login_logo' );
 // setting the url
-function my_login_logo_url() {
+function stswr_login_logo_url() {
     return home_url();
 }
-add_filter( 'login_headerurl', 'my_login_logo_url' );
+add_filter( 'login_headerurl', 'stswr_login_logo_url' );

@@ -1,3 +1,6 @@
+## 0.0.6
++ reverted fix, putting fix in parent theme
+
 ## 0.0.5
 + fixed function conflict
 

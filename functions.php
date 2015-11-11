@@ -54,8 +54,3 @@ function my_login_logo() { ?>
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
-// setting the url
-function my_login_logo_url() {
-    return home_url();
-}
-add_filter( 'login_headerurl', 'my_login_logo_url' );

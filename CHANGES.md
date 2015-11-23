@@ -1,3 +1,6 @@
+## 0.0.8
++ new styles for generic form elements in footer region
+
 ## 0.0.7
 + added widget regions to footer
 

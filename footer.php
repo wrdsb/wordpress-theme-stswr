@@ -27,10 +27,14 @@
              
             </div>
             <div class="col-sm-6 col-md-3">
-            <!-- nothing in here yet -->
+              <?php if ( is_active_sidebar( 'footer-left' ) ) : ?>
+                <?php dynamic_sidebar( 'footer-left' ); ?>
+              <?php endif; ?>
             </div>
             <div class="col-sm-6 col-md-3">
-            <!-- nothing in here yet -->
+              <?php if ( is_active_sidebar( 'footer-centre' ) ) : ?>
+                <?php dynamic_sidebar( 'footer-centre' ); ?>
+              <?php endif; ?>
             </div>
             <div class="col-sm-12 col-md-3">
               <?php if ( is_active_sidebar( 'footer-right' ) ) : ?>

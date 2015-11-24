@@ -5,7 +5,7 @@
  Author:       Suzanne Carter
  Author URI:   http://www.wrdsb.ca/
  Template:     wordpress-theme
- Version:      0.0.7
+ Version:      0.0.8
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         three-columns, responsive-layout, accessibility-ready
@@ -36,8 +36,8 @@
 }
 
 #loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
- background-color: #fff8eb !important;
-	border-top: 3px solid #ffa700;
+ background-color: #ffa700 !important;
+	border-top: 3px solid #b37500;
 	width:100%;
 }
 
@@ -342,3 +342,14 @@ td:hover {
 }
 
 /* .alerts p {} */
+
+/* form elements in the footer */
+
+.footer input[type=text] {
+	background-color: #fff !important;
+	color: #666 !important;
+}
+
+.footer input[type=submit] {
+	color: #666 !important;
+}

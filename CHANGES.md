@@ -1,5 +1,6 @@
 ## 0.0.7
 + added widget regions to footer
++ changed the #loginbar colour
 
 ## 0.0.6
 + reverted fix, putting fix in parent theme

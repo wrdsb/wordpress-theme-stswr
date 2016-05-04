@@ -14,6 +14,19 @@
  GitHub Branch: master
 */
 
+#ninja_forms_manage_subs {
+	margin: 45px 50px 75px 25px;
+}
+
+#ninja_forms_manage_subs th, #ninja_forms_manage_subs td {
+	padding: 5px !important;
+	font-size: .9em;
+}
+
+.ninja-forms-cont h4 {
+	margin-top: 25px;
+}
+
 :target {
 	padding-top: 50px !important;
 	-webkit-animation: target-fade 3s 1;

@@ -54,3 +54,13 @@ function my_login_logo() { ?>
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+// Ninja Forms PDF adjustments
+add_filter( 'ninja_forms_submission_pdf_fetch_sequential_number', '__return_true' );
+add_filter( 'ninja_forms_submission_pdf_fetch_date', '__return_true' );
+
+function custom_pdf_name( $name, $sub_id ) { 
+     $name = 'STSWR Report' . $sub_id; 
+     return $name; 
+  } 
+add_filter( 'ninja_forms_submission_pdf_name', 'custom_pdf_name', 20, 2 );

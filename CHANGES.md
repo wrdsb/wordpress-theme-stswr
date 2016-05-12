@@ -1,3 +1,6 @@
+## 0.0.9
++ ninja forms styles for PDF template
+
 ## 0.0.8
 + new styles for generic form elements in footer region
 

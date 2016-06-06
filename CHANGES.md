@@ -1,3 +1,6 @@
+## 0.0.10
++ added favicon.png
+
 ## 0.0.9
 + ninja forms styles for PDF template
 

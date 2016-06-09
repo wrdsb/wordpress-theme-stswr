@@ -1,3 +1,15 @@
+## 0.0.12
++ added ninja forms styles for front-end editor
+
+## 0.0.11
++ fixed favicon code
+
+## 0.0.10
++ added favicon.png
+
+## 0.0.9
++ ninja forms styles for PDF template
+
 ## 0.0.8
 + new styles for generic form elements in footer region
 

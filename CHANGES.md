@@ -1,3 +1,6 @@
+## 0.0.12
++ added ninja forms styles for front-end editor
+
 ## 0.0.11
 + fixed favicon code
 

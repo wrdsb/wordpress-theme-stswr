@@ -5,7 +5,7 @@
  Author:       Suzanne Carter
  Author URI:   http://www.wrdsb.ca/
  Template:     wordpress-theme
- Version:      0.0.11
+ Version:      0.0.12
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         three-columns, responsive-layout, accessibility-ready
@@ -13,6 +13,19 @@
  GitHub Theme URI: wrdsb/wordpress-theme-stswr
  GitHub Branch: master
 */
+
+#ninja_forms_manage_subs {
+	margin: 45px 50px 75px 25px;
+}
+
+#ninja_forms_manage_subs th, #ninja_forms_manage_subs td {
+	padding: 5px !important;
+	font-size: .9em;
+}
+
+.ninja-forms-cont h4 {
+	margin-top: 25px;
+}
 
 :target {
 	padding-top: 50px !important;

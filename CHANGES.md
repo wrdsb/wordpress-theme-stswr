@@ -1,3 +1,6 @@
+## 0.1.0
++ removed custom login functions
+
 ## 0.0.12
 + added ninja forms styles for front-end editor
 

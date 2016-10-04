@@ -33,30 +33,6 @@ function google_fonts() {
 }
 add_action( 'wp_head', 'google_fonts' );
 
-// standardizing log in logo
-function my_login_logo() { ?>
-    <style type="text/css">
-        .login h1 a {
-            background-image: url(http://stswrdev.wpengine.com/wp-content/themes/wordpress-theme-stswr/stswr_icon.gif);
-            padding-bottom: 30px;
-            background-size: 150px 150px;
-            height: 150px;
-            width: 150px;
-            background-repeat: no-repeat;
-        }
-    	.message {
-		    background-color: #f9fbff;
-    	}
-	    #login_error {
-	    	background-color: #fffefe;
-	    }
-	    .login {
-	    	background-color: #fff;
-	    }
-    </style>
-<?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
-
 // Ninja Forms PDF adjustments
 add_filter( 'ninja_forms_submission_pdf_fetch_sequential_number', '__return_true' );
 add_filter( 'ninja_forms_submission_pdf_fetch_date', '__return_true' );

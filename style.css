@@ -313,15 +313,18 @@ td:hover {
     color: #000;
 }
 
-#logo a h2 {
+#logo a #sitename {
     color: #333;
-    font-size: 20px;
+    font-size: 30px;
 }
 
-#logo a h3 {
+#logo a #sitedescription {
     color: #333;
     font-size: 18px;
-    margin-top: -10px;
+}
+
+#logo a #sitename, #logo a #sitedescription {
+    color: #333 !important;
 }
 
 .navbar-header {

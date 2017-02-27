@@ -1,3 +1,6 @@
+## 0.2.0
++ accessibility changes
+
 ## 0.1.0
 + removed custom login functions
 

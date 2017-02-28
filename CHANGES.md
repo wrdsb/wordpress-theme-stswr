@@ -1,3 +1,6 @@
+## 0.2.1
++ title size change
+
 ## 0.2.0
 + accessibility changes
 

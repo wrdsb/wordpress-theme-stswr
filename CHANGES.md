@@ -1,3 +1,6 @@
+## 0.2.2
++ mobile logo fix
+
 ## 0.2.1
 + title size change
 

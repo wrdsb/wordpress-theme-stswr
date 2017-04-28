@@ -5,7 +5,7 @@
  Author:       Suzanne Carter
  Author URI:   http://www.wrdsb.ca/
  Template:     wordpress-theme
- Version:      0.2.0
+ Version:      0.2.2
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         three-columns, responsive-layout, accessibility-ready
@@ -15,58 +15,58 @@
 */
 
 #ninja_forms_manage_subs {
-	margin: 45px 50px 75px 25px;
+    margin: 45px 50px 75px 25px;
 }
 
 #ninja_forms_manage_subs th, #ninja_forms_manage_subs td {
-	padding: 5px !important;
-	font-size: .9em;
+    padding: 5px !important;
+    font-size: .9em;
 }
 
 .ninja-forms-cont h4 {
-	margin-top: 25px;
+    margin-top: 25px;
 }
 
 :target {
-	padding-top: 50px !important;
-	-webkit-animation: target-fade 3s 1;
-	-moz-animation: target-fade 3s 1;
+    padding-top: 50px !important;
+    -webkit-animation: target-fade 3s 1;
+    -moz-animation: target-fade 3s 1;
 }
 
 @-webkit-keyframes target-fade {
-	0% { background-color: rgba(0,0,0,.1); }
-	100% { background-color: rgba(0,0,0,0); }
+    0% { background-color: rgba(0,0,0,.1); }
+    100% { background-color: rgba(0,0,0,0); }
 }
 @-moz-keyframes target-fade {
-	0% { background-color: rgba(0,0,0,.1); }
-	100% { background-color: rgba(0,0,0,0); }
+    0% { background-color: rgba(0,0,0,.1); }
+    100% { background-color: rgba(0,0,0,0); }
 }
 
 #contact:target {
-	padding-top: 0 !important;
-	-webkit-animation: target-fade 0s 0;
-	-moz-animation: target-fade 0s 0;
+    padding-top: 0 !important;
+    -webkit-animation: target-fade 0s 0;
+    -moz-animation: target-fade 0s 0;
 }
 
 #loginbar { /* contains log in/out, Staff Website and sometimes School Handbook links */
  background-color: #ffa700 !important;
-	border-top: 3px solid #b37500;
-	width:100%;
+    border-top: 3px solid #b37500;
+    width:100%;
 }
 
 #loginbar p.copyright {
-	color: #333;
-	font-family: 'Open Sans', sans-serif !important;
-    	-webkit-font-smoothing: antialiased;
-    	font-weight: 400;
+    color: #333;
+    font-family: 'Open Sans', sans-serif !important;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
 }
 
 #loginbar a {
-	color: #333;
-	font-weight: bold;
+    color: #333;
+    font-weight: bold;
 }
 
-
+/* Sidebar Buttons */
 .button, .button_login {
     font-family: 'Open Sans', sans-serif !important;
     -webkit-font-smoothing: antialiased;
@@ -189,7 +189,7 @@ p.copyright, h6.copyright {
 
 /* children in sub-nav */
 .nav_current_page_children_container {
-	background-color: #fffdf9; /*primary-faint*/
+    background-color: #fffdf9; /*primary-faint*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -333,15 +333,15 @@ td:hover {
     color: #333 !important;
 }
 
-.navbar-header {
-	background:url(stswr_icon.gif) no-repeat;
-	background-size: 50px 55px;
-	position:relative;
+#navbar-header {
+    background:url(stswr_icon.gif) no-repeat;
+    background-size: 50px 55px;
+    position:relative;
 }
 
-.navbar-header a:hover {
-	background-color: transparent;
-	color: #fff;
+#navbar-header a:hover {
+    background-color: transparent;
+    color: #fff;
 }
 
 .pf-content .printfriendly a:hover {
@@ -351,16 +351,16 @@ td:hover {
 /*** ALERTS ***/
 
 .alerts {
-	width: 1140px;
-	border: 10px dashed #900;
-	padding: 25px;
-	margin: 25px auto;
-	background-color: #ffffe6;
+    width: 1140px;
+    border: 10px dashed #900;
+    padding: 25px;
+    margin: 25px auto;
+    background-color: #ffffe6;
 }
 
 .alerts h1 {
-	font-weight: 700;
-	text-align: center;
+    font-weight: 700;
+    text-align: center;
 }
 
 /* .alerts p {} */
@@ -368,10 +368,10 @@ td:hover {
 /* form elements in the footer */
 
 .footer input[type=text] {
-	background-color: #fff !important;
-	color: #666 !important;
+    background-color: #fff !important;
+    color: #666 !important;
 }
 
 .footer input[type=submit] {
-	color: #666 !important;
+    color: #666 !important;
 }

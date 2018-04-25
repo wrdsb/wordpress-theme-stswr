@@ -1,3 +1,6 @@
+## 0.2.3
++ make .button and .button_login responsive
+
 ## 0.2.2
 + mobile logo fix
 

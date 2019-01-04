@@ -1,3 +1,6 @@
+## 0.2.4
++ change address in footer per Keith Prudham email 2019-01-04
+
 ## 0.2.3
 + make .button and .button_login responsive
 

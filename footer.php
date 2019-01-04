@@ -14,17 +14,10 @@
             <div class="col-sm-6 col-md-3">
             <!-- automate address -->
             <h1>Student Transportation Services of Waterloo Region</h1>
-            <address>130 - 4275 King St. East<br />
-            Kitchener ON N2P 2E9<br />
-            Phone: 519-650-4934<br />
-            Fax: 519-650-2979</address>
-
-             <div class="social-icons">
-                <!--<a href="#"><span class="icon-facebook" title="Facebook"></span></a>-->
-                <!--<a href="#"><span class="icon-twitter" title="Twitter"></span></a>-->
-                <!--<a href="#"><span class="icon-youtube" title="YouTube"></span></a>-->
-             </div>
-             
+            <address>602 – 540 Bingemans Centre Dr.<br />
+            Kitchener ON  N2B 3X9<br />
+            Phone: 519-744-7575<br />
+            Fax: 519-744-7564</address>
             </div>
             <div class="col-sm-6 col-md-3">
               <?php if ( is_active_sidebar( 'footer-left' ) ) : ?>

@@ -3,7 +3,7 @@
  Theme URI:    https://github.com/wrdsb/wordpress-theme-stswr/
  Description:  Child theme for STSWR, based on the WRDSB responsive theme.
  Author:       Suzanne Carter
- Author URI:   http://www.wrdsb.ca/
+ Author URI:   https://www.wrdsb.ca/
  Template:     wordpress-theme
  Version:      0.2.4
  License:      GNU General Public License v2 or later
@@ -148,13 +148,15 @@ a {
 }
 
 div.register {
-	background-color: #ffa700;
-}
-
-div.register:hover {
-	-webkit-box-shadow: -5px -5px -20px 7px rgba(122,193,67,1); 
-	-moz-box-shadow: -5px -5px -20px 7px rgba(122,193,67,1); 
-	box-shadow: -5px -5px -20px 7px rgba(122,193,67,1);
+    padding: 10px; 
+    text-align: center; 
+    border-radius: 10px; 
+    background-color: #ffa700;
+    -webkit-box-shadow: 5px 5px 20px -7px rgba(255, 167, 0, 1) !important; 
+    -moz-box-shadow: 5px 5px 20px -7px rgba(255, 167, 0, 1) !important; 
+    box-shadow: 5px 5px 20px -7px rgba(255, 167, 0, 1) !important;
+    max-width: 350px;
+    margin-bottom: 10px;
 }
 
 a:hover, a:focus {

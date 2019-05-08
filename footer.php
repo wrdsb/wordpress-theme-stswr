@@ -8,7 +8,7 @@
  * @subpackage WRDSB
  */
 ?>
-      <div class="footer" id="contact">
+      <div class="footer" id="address">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-3">

@@ -1,3 +1,10 @@
+## 0.2.5
++ update dashboard widget display
++ update secure links in hosted fonts
++ update .register shadow
++ update screenshot
++ fix footer target
+
 ## 0.2.4
 + change address in footer per Keith Prudham email 2019-01-04
 

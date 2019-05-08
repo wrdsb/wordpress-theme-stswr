@@ -395,3 +395,14 @@ td:hover {
 .footer input[type=submit] {
     color: #666 !important;
 }
+
+/** Internal Targets
++ protect internal targets from being hidden by admin bar
++ display attention getting fade on the key content
+**/
+
+:target {
+    padding-top: 0;
+    -webkit-animation: target-fade 1s .5;
+    -moz-animation: target-fade 1s .5;
+}

@@ -47,7 +47,7 @@
             	{ ?>
             		<a href="<?php echo site_url(); echo '/wp-login.php';?>">Log into <?php echo get_bloginfo('name'); ?></a>
             	<?php }?> 
-              <br />&copy; STSWR 2015</p>
+              <br />&copy; STSWR 2015 - <?php echo date("Y"); ?></p>
           </div>
 
     <?php wp_footer(); ?>

@@ -1,3 +1,6 @@
+## 0.2.6
++ update footer year
+
 ## 0.2.5
 + update dashboard widget display
 + update secure links in hosted fonts

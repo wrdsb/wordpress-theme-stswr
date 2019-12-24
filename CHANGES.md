@@ -1,3 +1,6 @@
+## 0.2.7
++ add content-page.php to fix index (WRDSB theme has diverged in style), index lists are broken
+
 ## 0.2.6
 + update footer year
 

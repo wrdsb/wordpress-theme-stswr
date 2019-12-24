@@ -60,3 +60,20 @@ function remove_dashboard_meta() {
     }
 }
 add_action ('admin_init', 'remove_dashboard_meta');
+
+// fixes readmore link for generated links on content-page.php
+
+function get_our_excerpt($our_post_id, $global_post_id)
+{
+    global $post;
+    $our_excerpt = get_the_excerpt($our_post_id);
+
+    if (strpos($our_excerpt, 'Read more about') !== false) {
+        $our_excerpt = str_replace(get_permalink($global_post_id), get_permalink($our_post_id), $our_excerpt);
+        $our_excerpt = str_replace(get_the_title($global_post_id), get_the_title($our_post_id), $our_excerpt);
+    } else {
+        $our_excerpt = $our_excerpt . '<p class="readmore" role="complementary"><a href="' . get_permalink($our_post_id) . '"><strong>Read more about</strong> <cite>' . get_the_title($our_post_id) . '</cite> &#187;</a></p>';
+    }
+
+    return $our_excerpt;
+}

@@ -14,7 +14,7 @@
             <div class="col-sm-6 col-md-3">
             <!-- automate address -->
             <h1>Student Transportation Services of Waterloo Region</h1>
-            <address>602 – 540 Bingemans Centre Dr.<br />
+            <address>602 – 550 Bingemans Centre Dr.<br />
             Kitchener ON  N2B 3X9<br />
             Phone: 519-744-7575<br />
             Fax: 519-744-7564</address>
